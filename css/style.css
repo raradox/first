@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+body{
+    background-color: #EAF2F5;
+}
+
+nav{
+    padding: 30px 0;
+}
+
+.navFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+}
+.menu{
+    display: flex;
+    gap: 50px;
+}
+.menu a{
+    font-size: 13px;
+    font-weight: 400;
+    color: #22253B;
+}
+.reg{
+    color: #3C3E50;
+    font-size: 13px;
+}
+.sign{
+    background-color: #38BFF2;
+    border-radius: 50px;
+    padding: 6px;
+    color: rgba(255, 255, 255, 0.932);
+}
+section{
+    padding: 25px;
+}
+/* ****************** */
+.burger{
+    /* border: 1px  solid blue; */
+    padding: 10px 0;
+    display: none;
+
+}
+.burger-menu{
+    position: fixed;
+    /* border: 1px solid red; */
+    background-color: white;
+    right: 0;
+    width: 256px;
+    height: 576px;
+    text-align: center;
+    padding: 0 25px;
+    line-height: 2;
+    /* margin-top: 5px; */
+    transition: .5s;
+    translate: 100%;
+}
+.burger a:focus + .burger-menu{
+    translate: 0;
+    right: 280px;
+}
+.burger a{
+    color: #22253B;
+}
+
+.burger-menu a{
+    color: #22253B;
+}
+.burger-menu{
+    border-radius: 50px;
+}
+.sign1{
+    background-color: #38BFF2;
+    border-radius: 50px;
+    padding: 6px;
+    color: rgba(255, 255, 255, 0.932);
+}
+
+
+section{
+    background-image: url(../img/Group\ 132.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.nextTest{
+    background-color:  #F15525;
+    color: #ffffff;
+    border-radius: 50px;
+    font-size: 20px ;
+    padding: 20px 15px;
+}
+.header{
+    font-size: 46px;
+    color: #22253B;
+    padding: 10px;
+}
+.left p{
+    color: #22253B;
+    font-size: 16px;
+    border-top: 1px solid #22253b48;
+    width: 60%;
+    padding: 20px 0;
+    margin-bottom: 18px;
+}
+.flexSection{
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow{
+    text-align: center;
+    font-size: 25px;
+}
+
+h2{
+    text-align: center;
+    font-size: 46px;
+    color: #22253B;
+    padding: 20px;
+}
+article{
+    background-color: #EAF2F5;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.rightSide p{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #22253B;
+}
+
+.article{
+    background-color: white;
+}
+.gridBox1 div,
+.gridBox div{
+    background-color: #EAF2F5;
+    text-align: center;
+    border-radius: 50px;
+    width: 270px;
+    height: 254px;
+    display: grid;
+    place-items: center;
+}
+.gridBox{
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+}
+.gridBox1 h3,
+.gridBox h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #22253B;
+    margin-top: -20px;
+}
+.gridBox1 p,
+.gridBox p{
+    font-size: 13px;
+    color: #22253B;
+    line-height: 15px;
+    margin-bottom: 25px;
+}
+.gridBox1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+
+@media screen and (max-width:430px) {
+    .box{
+        grid-template-columns: 1fr;
+        
+    }
+    .play{
+        top: -180px;
+    }
+    .cards{
+        flex-direction: column;
+        background-color: white;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .card-down{
+        width: 100%;
+        margin-left: 0;
+    }
+    h2{
+        text-align: center;
+        white-space: pre-wrap;
+        font-size: 35px;
+    }
+    .flexSection{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .container{
+        padding: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .reg{
+        display: none;
+    }
+    .sign{
+        position: relative;
+        left: -190px;
+        top: 20px;
+    }
+    .burger-menu{
+        text-align: right;
+    }
+    .leftSide{
+        display: none;
+    }
+    .rightSide p{
+        display: none;
+    }
+    .header{
+        font-size: 35px;
+    }
+    .gridBox{
+        flex-direction: column;
+    }
+    .gridBox1{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-right: 115px;
+    }
+    .container{
+        padding: 30px;
+    }
+
+
+}
+
+.vid{
+   display: grid;
+   place-items: center;
+}
+.vid p{
+    color:#22253B;
+    font-size: 16px;
+    line-height: 20px;
+}
+.play{
+    display: grid;
+    position: relative;
+    bottom: 300px;
+    place-items: center;
+}
+.play span{
+    color: white;
+    font-size: 20px;
+    line-height: 19.34px;
+}
+
+.cards{
+    background-image: url(../img/Rectangle\ 295.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+
+}
+.cards h4{
+    font-size: 77px;
+    font-weight: 700;
+    color: #38BFF2;
+}
+.cards p{
+    font-size: 24px;
+    font-weight: 600;
+    color: #22253B;
+}
+.cards span{
+    font-size: 16px;
+    line-height: 23px;
+    color: #22253B;
+}
+.card-down{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border: 2px solid white;
+    width: 70%;
+    border-radius: 50px;
+    padding: 20px 40px;
+    margin-left: 90px;
+    margin-bottom: 5px;
+}
+
+main{
+    background-image: url(../img/Rectangle\ 301.png);
+    padding: 30px 0;
+}
+.box div{
+    background-color: rgba(234, 242, 245, 1);
+    border-radius: 50px;
+    width: 100%;
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    gap: 30px;
+}
+.box3,
+.box2{
+    grid-column: span 2;
+    text-align: center;
+}
+.box2 h4,
+.box3 h4{
+    font-size: 32px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #22253B;
+    padding: 30px;
+}
+.box2 p,
+.box3 p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #22253B;
+}
+
+.block{
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   align-items: center;
+}
+.block p{
+    font-size: 16px;
+    line-height: 21px;
+    color: #22253B;
+    display: inline;
+}
+.block img{
+    display: inline;
+}
+
+.head-price span{
+    color: #38BFF2;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.head-price{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+}
+
+.prices{
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.price1 p,
+.price2 p,
+.price3 p,
+.price4 p,
+.price5 p,
+.price6 p,
+.price7 p{
+    font-size: 20px;
+    line-height: 25px;
+    color: #22253B;
+    display: inline;
+}
+.price8 p{
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #22253B;
+}
+.price1,
+.price2,
+.price3,
+.price4,
+.price5,
+.price6,
+.price7,
+.price8{
+    display: flex;
+    justify-content: space-between;
+}
+.price1,
+.price3,
+.price5,
+.price7{
+    background-color: #F3F3F3;
+    padding: 20px 0;
+    border-radius: 20px 20px 20px 20px;
+}
+.prices span{
+    font-size: 16px;
+    line-height: 25px;
+    color: #8E8E8E;
+}
+
+.baner{
+    background-color: #cbe4ee;
+    border-radius: 20px 20px 20px 20px;
+    width: 60%;
+    padding: 20px;
+    margin: auto;
+}
+.baner .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.baner .container div{
+    width: 30%;
+}
+
+.foot{
+    padding: 30px;
+}
+.foot .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-foot img{
+    width: 50%;
+}
+.left-foot p{
+    font-size: 16px;
+    line-height: 19px;
+    color: #8E8E8E;
+    padding: 10px 0;
+}
+.left-foot i{
+    color: #FFFFFF;
+    background-color: #22253B;
+    padding: 6px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.mid-foot a{
+    color: #22253B;
+    font-size: 13px;
+}
+.right-foot a{
+    font-size: 16px;
+    line-height: 23px;
+    color: #38BFF2;
+}
+.right-foot p{
+    color: #22253B;
+}
+.down-foot{
+    padding: 50px;
+    border-top: 1px solid grey;
+    margin-top: 10px;
+}
+.down-foot p{
+    font-size: 16px;
+    color: #8E8E8E;
+}
+
+
+@media screen and (max-width:430px) {
+    .block{
+        flex-direction: column;
+    }
+    .block2{
+        margin-left: -120px;
+    }
+    .prices{
+        flex-direction: column;
+    }
+    
+}
+
+
